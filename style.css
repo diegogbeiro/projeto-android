@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'android';
-    src: url('../d010/fontes/idroid.otf') format('opentype');
+    src: url('../projeto-android/fontes/idroid.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'bebasneue'; 
-    src: url('../d010/fontes/BebasNeue-Regular.ttf') format('truetype');
+    src: url('../projeto-android/fontes/BebasNeue-Regular.ttf') format('truetype');
 }
 
 :root{  
