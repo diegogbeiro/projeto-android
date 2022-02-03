@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url('../d010/fontes/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'bebasneue'; 
+    src: url('../d010/fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+:root{  
+    --cor01: #063d1e;
+    --cor02: #2fa866;
+    --cor03: #3ddc84;
+    --cor04: #83e1ad;
+    --cor05: #c5ebd6;
+
+    --fontepadrao: 'bebasneue';
+    --fonteandroid: 'android';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor04);
+    font-family: var(--fontepadrao);
+}
+
+header{
+    background-image: linear-gradient(to bottom,  #3ddc84,  #063d1e);
+    min-height: 120px;
+    text-align: center;
+    margin: auto;   
+ 
+}
+header > h1{
+    margin: auto;
+    padding: 16px 0px 4px 0px;
+    color: white;
+    font-size: 2em;
+    font-weight: normal;
+    max-width: 600px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253);
+}
+header > p{
+    margin: auto;
+    padding-bottom: 16px;
+    color: white; 
+    font-size: 1.2em;
+    max-width: 360px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253);     
+}
+
+nav{
+    background-color: var(--cor01);
+    padding: 16px; 
+}
+nav > a{
+    color: white;
+    margin-right: 16px;
+    text-decoration: none;
+}
+nav>a:hover{
+    font-weight: bolder;
+    transition-duration: .5s;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    padding: 4px;
+    min-width: 300px;
+    max-width: 1000px;
+}
+main img{
+    width: 100%;
+}
+main  .bugdroid{
+    margin: auto;
+    display: block;
+    max-width: 300px;
+    text-align: center;
+}
+main strong{
+    color: var(--cor01);
+}
+main p{
+    line-height: 1.6em;
+}
+
+article{
+    background-color: white;
+    margin: auto;
+    padding: 12px;
+}
+article > h1{
+    color: var(--cor01);
+    font-family: var(--fonteandroid);
+    font-weight: normal;
+    font-size: 2em;
+    padding-bottom: 4px;
+    text-indent: 12px;
+}
+article > h2{
+    background-image: linear-gradient(to right, #c5ebd6, white);
+    font-family: var(--fonteandroid);
+    font-weight: normal;
+    color: var(--cor01);
+    text-indent: 12px;
+}
+article > p{
+    font-weight: normal;
+    padding: 12px;
+    text-indent: 20px;
+}
+article  a{
+    color: var(--cor02);
+    font-weight: bold;
+    text-decoration: none;
+}
+article  a:hover{
+    font-size: 1.2em;
+}
+
+.video{
+    background-color: var(--cor01);
+    margin: 0px -16px 0px -16px;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+}
+div.video>iframe{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    right: 4%;
+    bottom: 4%;
+    width: 92%;
+    height: 92%;
+
+}
+
+aside{
+    background-color: var(--cor05);
+    margin: auto;
+    margin-top: 12px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.274);
+}
+aside > h2{
+    background-color: var(--cor03);
+    color: white;
+    font-family: var(--fontepadrao);
+    font-weight: normal;
+    padding: 4px 0px 4px 0px;
+    text-indent: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+aside > p{
+    padding: 8px;
+    text-indent: 8px;
+}
+aside > a{
+    text-decoration: none;
+}
+aside > ul{
+    list-style-type: '\2714\00a0\00a0\00a0' ;
+    list-style-position: inside;
+    columns: 2;
+    padding: 8px 0px 8px 16px ;
+
+    
+}
+
+footer{
+    background-color: var(--cor01);
+    min-height: 32px;
+    padding-top: 12px;
+    padding-right: 8px;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-bottom: -4px;
+ }
+footer > p{
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+footer>a{
+    color: white;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: var(--cor04);
+    font-size: 1.2em;
+}
+
+
